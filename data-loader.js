@@ -262,3 +262,8 @@ async function loadSiteData() {
     usingFallback = true;
   }
 }
+
+// Lancée dès le chargement du script (avant même app.js) pour ne pas
+// attendre le bootstrap : app.js et vote.js attendent tous deux cette
+// même promesse plutôt que d'appeler loadSiteData() chacun de leur côté.
+const siteDataReady = loadSiteData();

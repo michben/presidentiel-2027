@@ -103,6 +103,34 @@
     <button class="filter-btn" data-filter="hors_course">Hors course (<span id="count-hors_course">0</span>)</button>
   </div>
 
+  <section class="comparison-section vote-section" id="voteSection">
+    <h2 class="section-title">Urne citoyenne — votez pour votre candidat</h2>
+    <p class="vote-disclaimer">Vote symbolique et indicatif, sans valeur officielle. Un seul vote par personne : pour l'empêcher, nous vérifions votre appareil et votre connexion de façon anonymisée (hachées, jamais stockées en clair) — voir le détail ci-dessous.</p>
+
+    <div class="vote-stage">
+      <div class="vote-urn" id="voteUrn" aria-hidden="true">
+        <svg viewBox="0 0 120 110" width="88" height="80">
+          <rect x="14" y="34" width="92" height="66" rx="6" fill="var(--color-blue)" stroke="var(--color-primary)" stroke-width="3"/>
+          <rect x="6" y="18" width="108" height="18" rx="4" fill="var(--color-primary)"/>
+          <rect x="46" y="22" width="28" height="7" rx="3" fill="#fdf0d5"/>
+          <rect id="voteBallot" x="52" y="0" width="16" height="10" rx="1.5" fill="#fdf0d5" stroke="var(--color-primary-dark)" stroke-width="1" opacity="0"/>
+        </svg>
+      </div>
+      <div class="vote-stage-text">
+        <p id="voteStatusText">Choisissez un candidat ci-dessous pour glisser votre bulletin dans l'urne.</p>
+      </div>
+    </div>
+
+    <div class="vote-grid" id="voteGrid"></div>
+
+    <div class="vote-results" id="voteResults" hidden>
+      <div class="vote-results-total" id="voteResultsTotal"></div>
+      <div class="progress-chart-wrap" id="voteResultsWrap"></div>
+    </div>
+
+    <p class="vote-privacy-note">Pour éviter les votes multiples, l'adresse IP et une empreinte technique de votre appareil (résolution, fuseau horaire, navigateur…) sont hachées (SHA-256/HMAC) et associées à un identifiant anonyme stocké dans un cookie. Aucune IP n'est jamais enregistrée en clair, et ces informations ne servent qu'à cette vérification. Note : une adresse MAC ne peut techniquement pas être lue par un site web, quel qu'il soit.</p>
+  </section>
+
   <section class="comparison-section">
     <h2 class="section-title">Progression vers l'objectif (500 signatures)</h2>
     <div class="progress-chart-legend" id="progressChartLegend"></div>
@@ -179,6 +207,7 @@
   <script src="quiz-data.js?v=20260913a"></script>
   <script src="former-presidents.js?v=20260913a"></script>
   <script src="app.js?v=20260917a"></script>
+  <script src="vote.js?v=20260917a"></script>
   <script src="quiz.js?v=20260913a"></script>
   <script src="countdown.js?v=20260913a"></script>
 </body>

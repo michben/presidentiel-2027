@@ -564,6 +564,6 @@ async function init() {
 }
 
 (async function bootstrap() {
-  await loadSiteData();
+  await siteDataReady;
   init();
 })();
