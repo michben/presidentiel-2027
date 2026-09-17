@@ -510,7 +510,7 @@ function renderFooter() {
   if (footer) {
     footer.innerHTML = `
       <p>${content.aboutText}</p>
-      <p class="footer-sources">${links.map(l => `<a href="${l.url}" target="${l.url.startsWith('#') ? '' : '_blank'}" rel="noopener">${l.label}</a>`).join(' · ')}</p>
+      <p class="footer-sources">Sources : ${links.map(l => `<a href="${l.url}" target="${l.url.startsWith('#') ? '' : '_blank'}" rel="noopener">${l.label}</a>`).join(' · ')}</p>
       <p class="footer-note">${content.rulesText}</p>
     `;
   }

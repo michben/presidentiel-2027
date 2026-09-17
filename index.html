@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-  <link rel="stylesheet" href="style.css?v=20260913a">
+  <link rel="stylesheet" href="style.css?v=20260917a">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 16'%3E%3Crect width='8' height='16' fill='%23002060'/%3E%3Crect x='8' width='8' height='16' fill='white'/%3E%3Crect x='16' width='8' height='16' fill='%23ED2939'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -103,6 +103,12 @@
     <button class="filter-btn" data-filter="hors_course">Hors course (<span id="count-hors_course">0</span>)</button>
   </div>
 
+  <section class="comparison-section">
+    <h2 class="section-title">Progression vers l'objectif (500 signatures)</h2>
+    <div class="progress-chart-legend" id="progressChartLegend"></div>
+    <div class="progress-chart-wrap" id="progressChartWrap"></div>
+  </section>
+
   <main class="dashboard">
     <aside class="candidates-panel" id="candidatesPanel"></aside>
     <section class="map-section">
@@ -126,12 +132,6 @@
       <div class="stats-empty">Sélectionnez un candidat pour voir ses statistiques</div>
     </aside>
   </main>
-
-  <section class="comparison-section">
-    <h2 class="section-title">Progression vers l'objectif (500 signatures)</h2>
-    <div class="progress-chart-legend" id="progressChartLegend"></div>
-    <div class="progress-chart-wrap" id="progressChartWrap"></div>
-  </section>
 
   <section class="comparison-section">
     <h2 class="section-title">Classement des candidats</h2>
@@ -175,10 +175,10 @@
   </div>
 
   <script src="config.js?v=20260913a"></script>
-  <script src="data-loader.js?v=20260913a"></script>
+  <script src="data-loader.js?v=20260917a"></script>
   <script src="quiz-data.js?v=20260913a"></script>
   <script src="former-presidents.js?v=20260913a"></script>
-  <script src="app.js?v=20260913a"></script>
+  <script src="app.js?v=20260917a"></script>
   <script src="quiz.js?v=20260913a"></script>
   <script src="countdown.js?v=20260913a"></script>
 </body>

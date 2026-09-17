@@ -194,9 +194,13 @@ const FICHES = {
 };
 
 const SITE_LINKS = [
-  { label: 'À propos', url: '#about' },
-  { label: 'Soutenir', url: '#soutenir' },
-  { label: 'Conseil constitutionnel', url: 'https://www.conseil-constitutionnel.fr' }
+  { label: 'Conseil constitutionnel', url: 'https://www.conseil-constitutionnel.fr' },
+  { label: 'France-Vote.fr', url: 'https://www.france-vote.fr/actualites/parrainages-presidentielle-2027-500-signatures' },
+  { label: 'LCP', url: 'https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373' },
+  { label: 'Le JDD', url: 'https://www.lejdd.fr/politique/presidentielle-2027-la-liste-des-40-candidats-declares-ou-pressentis-177960' },
+  { label: '2027.help', url: 'https://2027.help/candidates-2027' },
+  { label: 'candidatspresidentielles2027.fr', url: 'https://www.candidatspresidentielles2027.fr' },
+  { label: 'Wikipedia', url: 'https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027' }
 ];
 
 const SITE_CONTENT = {
