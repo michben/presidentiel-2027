@@ -63,6 +63,9 @@
         <a class="icon-btn" id="youtubeBtn" href="#" target="_blank" rel="noopener" title="Vidéo : la politique expliquée simplement" aria-label="Vidéo explicative" hidden>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
         </a>
+        <button class="icon-btn" id="voteHeaderBtn" title="Voir le résultat de l'urne citoyenne" aria-label="Résultat du vote" hidden>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5z"/><path d="M4 9V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/><path d="M10 5V4a2 2 0 0 1 2-2 2 2 0 0 1 2 2v1"/></svg>
+        </button>
         <button class="icon-btn" id="themeToggle" title="Changer de thème" aria-label="Basculer le thème">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="themeIcon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
@@ -105,7 +108,7 @@
 
   <section class="comparison-section vote-section" id="voteSection">
     <h2 class="section-title">Urne citoyenne — votez pour votre candidat</h2>
-    <p class="vote-disclaimer">Vote symbolique et indicatif, sans valeur officielle. Un seul vote par personne : pour l'empêcher, nous vérifions votre appareil et votre connexion de façon anonymisée (hachées, jamais stockées en clair) — voir le détail ci-dessous.</p>
+    <p class="vote-disclaimer">Vote symbolique et indicatif, sans valeur officielle. Un seul vote par personne : pour l'empêcher, nous vérifions votre appareil et votre connexion de façon anonymisée (hachées, jamais stockées en clair).</p>
 
     <div class="vote-stage">
       <div class="vote-urn" id="voteUrn" aria-hidden="true">
@@ -122,13 +125,6 @@
     </div>
 
     <div class="vote-grid" id="voteGrid"></div>
-
-    <div class="vote-results" id="voteResults" hidden>
-      <div class="vote-results-total" id="voteResultsTotal"></div>
-      <div class="progress-chart-wrap" id="voteResultsWrap"></div>
-    </div>
-
-    <p class="vote-privacy-note">Pour éviter les votes multiples, l'adresse IP et une empreinte technique de votre appareil (résolution, fuseau horaire, navigateur…) sont hachées (SHA-256/HMAC) et associées à un identifiant anonyme stocké dans un cookie. Aucune IP n'est jamais enregistrée en clair, et ces informations ne servent qu'à cette vérification. Note : une adresse MAC ne peut techniquement pas être lue par un site web, quel qu'il soit.</p>
   </section>
 
   <section class="comparison-section">
@@ -199,6 +195,22 @@
         </button>
       </div>
       <div class="quiz-body" id="quizBody"></div>
+    </div>
+  </div>
+
+  <div class="quiz-overlay" id="voteOverlay">
+    <div class="quiz-modal">
+      <div class="quiz-header">
+        <h2>🗳️ Urne citoyenne — résultats</h2>
+        <button class="icon-btn" id="voteOverlayCloseBtn" title="Fermer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="quiz-body">
+        <p id="voteOverlayStatusText" class="vote-overlay-status"></p>
+        <div class="vote-results-total" id="voteResultsTotal"></div>
+        <div class="progress-chart-wrap" id="voteResultsWrap"></div>
+      </div>
     </div>
   </div>
 

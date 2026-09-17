@@ -599,16 +599,10 @@ a:hover { text-decoration: underline; }
 .vote-candidate-card:hover:not(:disabled) { border-color: var(--color-primary); background: var(--hover-bg); }
 .vote-candidate-card:disabled { cursor: default; opacity: 0.6; }
 .vote-candidate-card .cand-avatar { width: 34px; height: 34px; font-size: 13px; }
+.vote-overlay-status { font-size: 14px; font-weight: 600; margin-bottom: 14px; }
 .vote-results-total { font-size: 13px; font-weight: 600; color: var(--text-muted); margin-bottom: 10px; }
 .vote-my-choice { background: var(--bg-subtle); border-radius: var(--radius-sm); }
 .vote-my-choice .progress-chart-label { font-weight: 700; color: var(--color-primary); }
-.vote-privacy-note {
-  font-size: 11px;
-  color: var(--text-faint);
-  margin-top: 14px;
-  max-width: 760px;
-  line-height: 1.5;
-}
 @media (max-width: 640px) {
   .vote-stage { flex-direction: column; text-align: center; }
   .vote-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
